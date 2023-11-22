@@ -12,4 +12,4 @@ weighted_sum = (subject1_grade * subject1_credits) + (subject2_grade * subject2_
 gpa = weighted_sum / total_credits
 
 
-print(f"GPA = {gpa:.1f}")
+print(f"GPA = {gpa:.2f}")

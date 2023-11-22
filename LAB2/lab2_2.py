@@ -5,3 +5,4 @@ monthly_interest_rate = (annual_interest_rate / 100) / 12 #คำนวรดอ
 monthly_payment = (principal * monthly_interest_rate) / (1 - (1 + monthly_interest_rate) ** -num_payments) #สูครตามอาจารย์ให้มา
 
 print(f"Monthly payment is {monthly_payment:.2f}") 
+   
