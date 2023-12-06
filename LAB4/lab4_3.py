@@ -2,13 +2,16 @@
 first_name = input("Please enter your first name: ")
 last_name = input("Please enter your last name: ")
 
-capitalized_first_name = first_name.capitalize()
+capitalized_first_name = first_name.capitalize() #เพิ่มตรงนี้ให้เรียกจะได้ไม่สับสน
 
 lucky_number = int(len(last_name) / len(capitalized_first_name))
 
 print(f"Hi {capitalized_first_name} {last_name.upper()}, your lucky number is {lucky_number}")
 for _ in range(lucky_number):
     print(capitalized_first_name)
+
+
+
 
 new_first_name = input("Please enter a name to replace your first name: ")
 characters_to_strip = input("Please enter characters to be stripped out from your last name: ")
