@@ -7,7 +7,7 @@
 
 # calculate_lucky_number(first_name, last_name)
 
-#อันบนทำเป็นฝึกชั่น อันล่างเขียนตรงๆ
+#อันบนทำเป็นฟังก์ชัั่นอันล่างเขียนตรงๆ
 
 
 first_name = input("Please enter your first name: ")
