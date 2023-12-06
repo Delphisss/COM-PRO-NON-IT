@@ -1,6 +1,5 @@
-Amount = float(input("Amount : "))
-Years = int(input("Years : "))
-Rate = float(input("Rate : "))
-Interest = Amount * Years * (Rate/ 100)
-
-print("Interest :",Interest)
+#ข้อ2
+price=int(input("Enter product's price :"))
+vat=int(input("Enter VAT rate(.0-100) :"))
+value=price+(price*vat/100)
+print("Total with VAT:",value ,"baht.")
