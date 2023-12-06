@@ -1,4 +1,3 @@
-# Program to calculate product price with 7% VAT
 product_price = float(input("Enter product’s price: "))
 total_with_vat = product_price * 1.07
 print(f"Total with VAT: {total_with_vat} baht.")
