@@ -5,5 +5,4 @@ last_name = input("Please enter your last name: ")  #รับนามสกุ
 lucky_number = int(len(last_name) / len(first_name)) 
 print(f"Hi {first_name.capitalize()} {last_name.upper()}, your lucky number is {lucky_number}")
 
-for _ in range(lucky_number):
-    print(first_name.capitalize())
+print(first_name.capitalize()*lucky_number)
