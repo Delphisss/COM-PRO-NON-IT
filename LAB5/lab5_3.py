@@ -1,16 +1,16 @@
-books = [['Accounting', 'Psychology', 'Harry Potter'], ['John Lee', 'Jason Hart', 'J. K. Rowling'], [2019, 2020, 2021], [29.50, 19.99, 50.25]]
+books = [['Accounting', 'Psychology', 'Harry Potter'], 
+         ['John Lee', 'Jason Hart', 'J. K. Rowling'], 
+         [2019, 2020, 2021], [29.50, 19.99, 50.25]]
 
 print("Books' titles:")
 print(books[0])
 
 sold_book_title = input("Enter sold book's title: ")
-
-try:
-    index = books[0].index(sold_book_title)
-    for book_info in books:
-        del book_info[index]
-except ValueError:
-    print(f"The book '{sold_book_title}' is not in the list.")
+index = books[0].index(sold_book_title)
+books[0].pop(index)  # Remove title
+books[1].pop(index)  # Remove author
+books[2].pop(index)  # Remove year
+books[3].pop(index)  # Remove price
 
 print("\nUpdated books' titles:")
 print(books[0])
