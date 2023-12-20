@@ -1,32 +1,13 @@
-print("Program to check if num1 is in [0-9] and num2 is in [10-99].")
-num1 = int(input("Enter num1: "))
-num2 = int(input("Enter num2: "))
+# Exercise 5: Inventory
+# 1. Suppose that our store has a total of 100 items in the inventory. 
+# Write a program that asks the user to enter the number of 
+# ordered items to be taken out from the inventory and checks if 
+# there are enough items. If not, print “There aren’t enough 
+# items.”. Otherwise, the program further checks if the 
+# inventory will be less than 50%. If so, urge the user with the 
+# number of items to fill up the inventory. For example, if there 
+# are 48 items left, then print “Please fill inventory with 52 
+# more items.” If not, print “No need to fill inventory at 
+# time being.” Finally, report the number of remaining items.
 
-correct_num1 = 0 <= num1 <= 9
-correct_num2 = 10 <= num2 <= 99
-
-if correct_num1 and correct_num2:
-    print("Both numbers are entered correctly.")
-elif correct_num1:
-    print("Only num1 is entered correctly.")
-elif correct_num2:
-    print("Only num2 is entered correctly.")
-else:
-    print("Both numbers are NOT entered correctly.")
-print("Goodbye.")
-
-score = int(input("Enter the score: "))
-
-if 0 <= score <= 100:
-    if score >= 80:
-        print("Grade: A")
-    elif score >= 70:
-        print("Grade: B")
-    elif score >= 60:
-        print("Grade: C")
-    elif score >= 50:
-        print("Grade: D")
-    else:
-        print("Grade: F")
-else:
-    print("Error: Score is not within the range 0-100.")
+# 1) Re-do Example 5 by using a different approach (not nested if)
