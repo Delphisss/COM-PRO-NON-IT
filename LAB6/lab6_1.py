@@ -1,13 +1,15 @@
-# Exercise 5: Inventory
-# 1. Suppose that our store has a total of 100 items in the inventory. 
-# Write a program that asks the user to enter the number of 
-# ordered items to be taken out from the inventory and checks if 
-# there are enough items. If not, print “There aren’t enough 
-# items.”. Otherwise, the program further checks if the 
-# inventory will be less than 50%. If so, urge the user with the 
-# number of items to fill up the inventory. For example, if there 
-# are 48 items left, then print “Please fill inventory with 52 
-# more items.” If not, print “No need to fill inventory at 
-# time being.” Finally, report the number of remaining items.
+total_items = 100
+ordered_items = int(input("Enter the number of items to be taken out: "))
 
-# 1) Re-do Example 5 by using a different approach (not nested if)
+enough_items = ordered_items <= total_items
+
+if enough_items:
+    remaining_items = total_items - ordered_items
+    if remaining_items < total_items * 0.5:
+        items_to_fill = total_items - remaining_items
+        print(f"Please fill inventory with {items_to_fill} more items.")
+    else:
+        print("No need to fill inventory at this time.")
+    print(f"Remaining items in inventory: {remaining_items}")
+else:
+    print("There aren’t enough items.")
