@@ -17,3 +17,4 @@ else:
 print(f"Remaining items in inventory: {remaining_items}")
 
 # print(total_items)
+    
