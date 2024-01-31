@@ -1,6 +1,5 @@
 import random
 from basic_stats import average, std
-# import basic_stats as stat
 def simulate_dice_rolls(num_rolls):
     rolls = [random.randint(1, 6) for _ in range(num_rolls)]
     return rolls
