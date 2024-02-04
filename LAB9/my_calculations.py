@@ -10,7 +10,7 @@ def current_ratio(x, y):
     cr = []
     for i in range(len(x)):
         cr.append(round(x[i] / y[i], 2))
-    return cr
+    return cr 
 
 def debt_assets(x, y):
     sx = 0

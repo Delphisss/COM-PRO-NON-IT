@@ -12,4 +12,4 @@ def std(x):
     s = 0
     for i in range(len(x)):
         s += math.pow(x[i] - avg, 2)
-    return math.sqrt(s / len(x))
+    return math.sqrt(s / len(x)) 

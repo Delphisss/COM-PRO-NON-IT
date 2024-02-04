@@ -15,3 +15,4 @@ print("Current Ratio:", current_ratio_result)
 # Calculate Debt to Assets
 debt_assets_result = my_calculations.debt_assets(current_assets, current_liabilities)
 print("Debt to Assets:", debt_assets_result)
+ 

@@ -1,10 +1,9 @@
-def m1(x,y):
-    return x+y
-def m2(x):
-    z = []
-    for i in range(len(x)-1):
-        z.append(m1(x[i],x[i+1]))
-    print(z)
-    
-test =[1,2,3,4,5]
-m2(test)
+def yg(w,c1,c2):
+    for i in range(w):
+        for j in range(w):
+            if i>=w/2 and j>=w/2:
+                print(c1,end='')
+            else:
+                print(c2,end='')
+        print()
+yg(4,'x','o')

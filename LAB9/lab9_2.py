@@ -10,4 +10,3 @@ def circle_circumference(r):
 r = int(input("Enter circle radius: "))
 print("Circle circumference is " , circle_circumference(r))
 print("Circle area is " , circle_area(r))
-
