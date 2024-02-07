@@ -1,9 +1,1 @@
-def yg(w,c1,c2):
-    for i in range(w):
-        for j in range(w):
-            if i>=w/2 and j>=w/2:
-                print(c1,end='')
-            else:
-                print(c2,end='')
-        print()
-yg(4,'x','o')
+https://colab.research.google.com/drive/1fAnkXto0ygyvKPNsw09x2D1VpleWbWVF?usp=sharing
